@@ -1,0 +1,117 @@
+* {box-sizing: border-box}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: -.5px;
+    font-weight: 600;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 10% 26% 26% 1fr;
+    grid-template-rows: 20% 15% 40% 1fr;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+}
+.container > div {padding: 15px}
+
+.container > div:first-of-type,
+.container > div:nth-of-type(2),
+.container > div:nth-of-type(3){
+    background-color: #dfdfdf;
+    grid-row: span 2;
+    padding: 0;
+    color: #cececf
+}
+.container > div:nth-of-type(2) div {
+    background-color: #414146;
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.container > div:nth-of-type(3) {grid-row: span 1; color: white}
+
+.container > div:nth-of-type(3) div {
+    background-color: #ff5722;
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container > div:nth-of-type(4) {background-color: #ff5722}
+
+.container > div:nth-of-type(5) {background-color: #27282a}
+
+.container > div:nth-of-type(6) {
+    background-color: #ff5722;
+    display: flex;
+    align-items: center;}
+
+.container > div:nth-of-type(6) i {
+    border: 1.5px solid white;
+    border-radius: 50%;
+    margin: 1px;
+    padding: 9px;
+}
+.container > div:nth-of-type(6) i:first-of-type {margin-left: 10px; padding: 9px 12px}
+
+.container > div:nth-of-type(7) {
+    background-color: #565a60;
+    grid-row: 2 /4;
+    grid-column: 3 /4;
+}
+.container > div:nth-of-type(7) > div{
+    color: #7c7f82;
+    display: flex; 
+    align-items: flex-start}
+
+.container > div:nth-of-type(7) > div div h4 {
+    margin: 0;
+    color: #c7c8ca;
+    font-weight: 500;
+}
+.container > div:nth-of-type(7) > div div p {margin: 0 0 10px 0; font-size: 12px}
+
+.container > div:nth-of-type(7) > div i {font-size: 20px; margin-right: 15px}
+
+.container > div:nth-of-type(8) {
+    background-color: #ab5941;
+    grid-row: 2 /4;
+    grid-column: 4 /5;
+}
+.container > div:nth-of-type(8) > div{
+    display: flex;
+    align-items: center;
+    color: #f4eae7
+}
+.container > div:nth-of-type(8) > div p {margin: 10px 0 10px 15px; color: #dcbbb1}
+
+.container > div:nth-of-type(9) {
+    background-color: #27282a;
+    grid-column: 1 / 4;
+    padding-left: 120px;
+    display: flex;
+    align-items: center;
+}
+.container > div:nth-of-type(9) > p {
+    display: inline-block;
+    margin: 0 10px;
+    color: #848485;
+}
+.container > div:last-of-type {
+    background-color: #723927;
+    font-size: 12px;
+    color: #926f65;
+    text-align: end;
+    padding-top: 20px
+}
+.container > div:last-of-type span {color:#863d27; margin-right: 110px}
